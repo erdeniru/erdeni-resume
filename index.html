@@ -22,7 +22,8 @@
                 <p>
                     Мне 41 лет. <br>
                     Являюсь <strong>Frontend-разработчик</strong> уровня <strong>Junior</strong>.<br> 
-                    Знаю <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>.
+                    Знаю <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>.<br>
+                    <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo asperiores cum voluptates iusto aut necessitatibus odio tempora veniam nulla hic provident aliquid dolores illo commodi beatae, excepturi, nobis, tempore facere. -->
                 </p>
                 <p>
                     Люблю <em>программировать</em> и <em>заниматься саморазвитием</em>.
@@ -37,7 +38,7 @@
     
         <div class="card hobby">
             <h2>Мои хобби</h2>
-            <ol>
+            <ol class="hobby-list">
                 <li>Путешествия</li>
                 <li>Саморазвитие</li>
             </ol>
@@ -45,46 +46,38 @@
     
         <div class="card experience">
             <h2>Опыт работы</h2>
-            <table width="500">
-                <thead>
-                    <tr>
-                        <th>Название</th>
-                        <th>Должность</th>
-                        <th>Год</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Почта России</td>
-                        <td>Программист</td>
-                        <td>2005-2007</td>
-                    </tr>
-                    <tr>
-                        <td>РЖД</td>
-                        <td>Программист</td>
-                        <td>2007-2024</td>
-                    </tr>
-                </tbody>
-            </table>
+            <table class="experience-table" width="500">
+                <tr>
+                    <td>Почта России</td>
+                    <td>Программист</td>
+                    <td>2005-2007</td>
+                </tr>
+                <tr>
+                    <td>РЖД</td>
+                    <td>Программист</td>
+                    <td>2007-2024</td>
+                </tr>
+        </table>
         </div>
     
-        <div class="contact-me">
+        <div class="card feadback">
             <h2>Связаться со мной</h2>
     
             <form action="/">
-                <div>
-                    <label for="name">Ваше имя: </label>
-                    <input id="name" type="text" placeholder="Введите имя">
+                <div class="feadback-row">
+                    <div class="feadback-field">
+                        <label for="name">Ваше имя: </label>
+                        <input id="name" type="text" placeholder="Введите имя" />
+                    </div>
+                
+                    <div class="feadback-field">
+                        <label for="email">Ваш email: </label>
+                        <input id="email" type="email" placeholder="Введите email" />
+                    </div>
                 </div>
             
-                <div>
-                    <label for="email">Ваш email: </label>
-                    <input id="email" type="email" placeholder="Введите email">
-                </div>
-            
-                <div>
+                <div class="feadback-field">
                     <label for="message">Ваше сообщение: </label>
-                    <br>
                     <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
                 </div>
                 
