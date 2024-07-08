@@ -8,62 +8,6 @@ body {
     color: #0f141e;
 }
 
-.container {
-    max-width: 1024px;
-    margin: auto;
-    padding-top: 30px;
-}
-
-.about {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    vertical-align: top;
-}
-
-.about-avatar {
-    /* border: 1px solid red; */
-}
-
-.about-avatar img {
-    width: 200px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-}
-
-.about-text {
-    margin-left: 20px;
-    /* border: 1px solid red; */
-}
-
-.about-text p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #86898f;
-    margin: 0px;
-}
-
-.about-text h4 {
-    margin-bottom: 10px;
-}
-
-.card {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.card h2 {
-    margin-bottom: 10px;
-}
-
-.hobby {
-    background-color: antiquewhite;
-}
-
-.experience {
-    background-color: LightSteelBlue;
-}
 
 a {
     color: blue;
@@ -93,6 +37,70 @@ a:active {
     opacity: 0.8;
 }
 
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.about {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    vertical-align: top;
+    /* border: 1px solid red; */
+}
+
+.about-avatar {
+    /* border: 1px solid red; */
+}
+
+.about-avatar img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.about-text {
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}
+
+.about-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #86898f;
+    margin: 0px;
+}
+
+.about-text h4 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+    .about {
+        display: block;
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        /* border: 1px solid red; */
+    }
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.hobby {
+    background-color: antiquewhite;
+}
+
 .hobby-list {   
     padding: 0 20px;
 }
@@ -100,6 +108,10 @@ a:active {
 .hobby-list li {
     color: gray;
     margin-bottom: 10px;
+}
+
+.experience {
+    background-color: LightSteelBlue;
 }
 
 .experience-table {
@@ -160,4 +172,15 @@ a:active {
     padding: 15px 0px 10px 0px;
     outline: none;
     font-family: inherit;
+}
+
+@media (max-width: 650px) {
+    .feadback-row {
+        display: block;
+    }
+
+    .feadback-row .feadback-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
